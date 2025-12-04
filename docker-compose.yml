@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  attendance-app:
+    build: .
+    container_name: attendance-app
+    restart: unless-stopped
+    ports:
+      - "3000:3000" # nội bộ VPS: 3000
+    env_file:
+      - .env.production
+    # Nếu cần timezone chuẩn VN
+    environment:
+      - TZ=Asia/Ho_Chi_Minh
