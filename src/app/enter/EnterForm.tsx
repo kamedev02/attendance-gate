@@ -65,7 +65,7 @@ export function EnterForm() {
 					<input
 						value={studentId}
 						onChange={(e) => setStudentId(e.target.value)}
-						className="w-full border rounded-lg px-3 py-2 text-sm focus:ring focus:ring-blue-200"
+						className="w-full border rounded-lg px-3 py-2 text-sm text-black/70 focus:ring focus:ring-blue-200"
 						placeholder="VD: 20123456"
 					/>
 				</div>
